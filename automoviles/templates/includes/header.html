@@ -1,0 +1,23 @@
+<div class="top-bar">
+    <div class="top-bar-left">
+      <ul class="dropdown menu" data-dropdown-menu>
+        <li class="menu-text">Automoviles</li>
+        <li>
+          <a href="">Listar</a>
+          <ul class="menu vertical">
+            <li><a href="{% url 'marca_app:list_marcas' %}">Marcas</a></li>
+            <li><a href="{% url 'modelo_app:list_modelos' %}">Modelos</a></li>
+            <li><a href="{% url 'coche_app:list_coches' %}">Coches</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="">Registrar</a>
+          <ul class="menu vertical">
+            <li><a href="{% url 'marca_app:regist_marcas' %}">Marcas</a></li>
+            <li><a href="{% url 'modelo_app:regist_modelos' %}">Modelos</a></li>
+            <li><a href="{% url 'coche_app:regist_coches' %}">Coches</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
